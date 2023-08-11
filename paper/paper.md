@@ -34,7 +34,7 @@ All these studies benefit from numerical modelling to cut down on the number of 
 
 # State of the field
 
-Direct-chill casting modelling broadly falls into two approaches. One class of solution--multiphase or multiple domain models--uses independent conversation equations for each phase [@Ni1991]. The conservation equations are then coupled using boundary conditions at phase interfaces, thereby requiring these interfaces to be accurately tracked. More recent implementations of these multiple domain models implement grain motion [@Heyvaert2017; @Tveito2018]. This approach is computationally expensive for optimization searches.    
+Direct-chill casting modelling broadly falls into two approaches. One class of solution--multiphase or multiple domain models--uses independent conservation equations for each phase [@Ni1991]. The conservation equations are then coupled using boundary conditions at phase interfaces, thereby requiring these interfaces to be accurately tracked. More recent implementations of these multiple domain models implement grain motion [@Heyvaert2017; @Tveito2018]. This approach is computationally expensive for optimization searches.    
 
 The other approach is based on the continuum model [@Bennon1987] and can also include the effect of free-floating dendrites [@Vreeman2000]. The continuum model avoids the requirement of tracking phase interfaces by implicitly integrating the microscopic description of transport behaviour in a continuum formulation. This approach has been validated with temperature measurements in the sump [@Vreeman2002] and is the starting point for `directChillFoam`.
  
